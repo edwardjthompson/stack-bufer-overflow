@@ -9,12 +9,13 @@ int check_authentication(char *password) {
 
  strcpy(password_buffer, password);
 
- if(strcmp(password_buffer, "michael") == 0)
- return 1;
- else if(strcmp(password_buffer, "tsikerdekis") == 0)
- return 1;
- else
- return 0;
+ if(strcmp(password_buffer, "michael") == 0) {
+    return 1;
+ } else if(strcmp(password_buffer, "tsikerdekis") == 0) {
+    return 1;
+ } else {
+    return 0;
+ }
 }
 
 int main(int argc, char *argv[]) {
