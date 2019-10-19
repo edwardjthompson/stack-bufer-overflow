@@ -12,7 +12,7 @@ int fakt(int x){
 int check_authentication(char *password) {
  char password_buffer[16];
 
- strcpy(password_buffer, password);
+ strncpy(password_buffer, password, 16);
 
  if(strcmp(password_buffer, "michael") == 0) {
     return 1;
